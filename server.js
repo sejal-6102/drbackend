@@ -25,7 +25,8 @@ const app = express();
 const allowedOrigins = [
  'http://localhost:3000',
   'https://drbackend-production.up.railway.app',
-  'https://dronum-git-main-sejal-6102s-projects.vercel.app' // For local frontend development
+  'https://dronum-git-main-sejal-6102s-projects.vercel.app',
+  'https://trapotiez.com', // For local frontend development
   // Add your production frontend URL here. Example:
   // 'https://your-frontend-app.up.railway.app',
   // 'https://www.yourcustomdomain.com'
