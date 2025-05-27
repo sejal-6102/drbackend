@@ -102,10 +102,11 @@ mongoose.connect(MONGODB_URI)
     });
 
 
-    // --- Start Server ---
-    const PORT = process.env.PORT || 5000; // Use Railway's port or 5000 for local dev
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
+      const HARDCODED_LISTENING_PORT = 5005; // <--- CHOOSE A PORT, e.g., 5005
+    console.log(`[DEBUG] Intentionally ignoring process.env.PORT. Attempting to listen on hardcoded port: ${HARDCODED_LISTENING_PORT}`);
+
+    app.listen(Number(HARDCODED_LISTENING_PORT), () => {
+      console.log(`Server running on port ${HARDCODED_LISTENING_PORT}`); // This log should now show 5005
     });
 
   })
