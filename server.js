@@ -1,7 +1,11 @@
+console.log(`[ENV_DEBUG] START OF SCRIPT: process.env.PORT = ${process.env.PORT} (type: ${typeof process.env.PORT})`);
+console.log(`[ENV_DEBUG] START OF SCRIPT: process.env.NODE_ENV = ${process.env.NODE_ENV}`);
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config(); // Ensures .env variables are loaded if you use a .env file locally
+console.log(`[ENV_DEBUG] AFTER DOTENV: process.env.PORT = ${process.env.PORT} (type: ${typeof process.env.PORT})`);
 const path = require('path');
 
 // Import your route handlers
