@@ -23,7 +23,9 @@ const app = express();
 // Define allowed origins. Add your production frontend URL(s) here.
 // It's best to get this from an environment variable in production.
 const allowedOrigins = [
-  'http://localhost:3000', // For local frontend development
+ 'http://localhost:3000',
+  'https://drbackend-production.up.railway.app',
+  'https://dronum-git-main-sejal-6102s-projects.vercel.app' // For local frontend development
   // Add your production frontend URL here. Example:
   // 'https://your-frontend-app.up.railway.app',
   // 'https://www.yourcustomdomain.com'
