@@ -19,6 +19,17 @@ const adminDataRoutes = require("./routes/adminData");
 
 const app = express();
 
+
+// --- Cloudinary Configuration ---
+// Ensure these environment variables are set in Railway and your local .env for development
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+  secure: true
+});
+// --- End Cloudinary Configuration ---
+
 // --- CORS Configuration ---
 // Define allowed origins. Add your production frontend URL(s) here.
 // It's best to get this from an environment variable in production.
